@@ -1,0 +1,114 @@
+{
+  ConstraintSets: {
+    start: {
+      accept_call: {
+        end: ['end_call', 'start', 8],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'gone'
+      },
+      end_call: {
+        end: ['box', 'end', 16],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'gone'
+      },
+      last_name: {
+        start: ['first_name', 'start'],
+        top: ['first_name', 'bottom'],
+        visibility: 'gone'
+      },
+      first_name: {
+        start: ['caller_pic', 'end', 8],
+        top: ['caller_pic', 'top', 8],
+        visibility: 'gone'
+      },
+      caller_pic: {
+        start: ['box', 'start', 16],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'gone'
+      },
+      mic_icon: {
+        end: ['box', 'end', 8],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'visible'
+      },
+      call_time: {
+        start: ['call_icon', 'start', 42],
+        top: ['call_icon', 'top'],
+        bottom: ['call_icon', 'bottom'],
+        visibility: 'visible'
+      },
+      call_icon: {
+        start: ['box', 'start', 8],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'visible'
+      },
+      box: {
+        width: 150,
+        height: 40,
+        start: ['parent', 'start', 16],
+        end: ['parent', 'end', 16],
+        top: ['parent', 'top']
+      }
+    },
+    end: {
+      accept_call: {
+        end: ['end_call', 'start', 8],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'visible'
+      },
+      end_call: {
+        end: ['box', 'end', 16],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'visible'
+      },
+      last_name: {
+        start: ['first_name', 'start'],
+        top: ['first_name', 'bottom'],
+        visibility: 'visible'
+      },
+      first_name: {
+        start: ['caller_pic', 'end', 8],
+        top: ['caller_pic', 'top', 8],
+        visibility: 'visible'
+      },
+      caller_pic: {
+        start: ['box', 'start', 16],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'visible'
+      },
+      mic_icon: {
+        end: ['box', 'end', 8],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'gone'
+      },
+      call_time: {
+        start: ['call_icon', 'start', 42],
+        top: ['call_icon', 'top'],
+        bottom: ['call_icon', 'bottom'],
+        visibility: 'gone'
+      },
+      call_icon: {
+        start: ['box', 'start'],
+        top: ['box', 'top'],
+        bottom: ['box', 'bottom'],
+        visibility: 'gone'
+      },
+      box: {
+        width: 290,
+        height: 90,
+        start: ['parent', 'start', 16],
+        end: ['parent', 'end', 16],
+        top: ['parent', 'top']
+      }
+    }
+  }
+}
